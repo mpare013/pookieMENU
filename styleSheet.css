@@ -1,0 +1,114 @@
+.logoTitle{
+    background-color: transparent;
+    background-attachment: fixed;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0%;
+}
+.navigationContainer {
+    text-align: center;
+}
+
+.bfast:hover img{
+    content: url('bfastHover.png');
+}
+
+.lunch:hover img{
+    content: url('lunchHover.png');
+}
+
+.dindin:hover img{
+    content: url('dindinHover.png');
+}
+
+
+.letter:hover img{
+    content: url('letterOpened.png')
+}
+/* BFAST PAGE*/
+
+.bfastLogo{
+    background-color: transparent;
+    background-attachment: fixed;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0%;
+    position: relative;
+    z-index:1;
+}
+
+@keyframes moveCloud {
+    0% {
+        transform: translateX(-100%); /* Start and end position: outside the left edge */
+    }
+    100% {
+        transform: translateX(100vw); /* Middle position: outside the right edge */
+    }
+}
+.cloud2{
+    position: absolute;
+    z-index:0;
+    top: 55%;
+    animation: moveCloud 100s linear infinite;
+
+}
+.cloud1{
+    position: absolute;
+    z-index:0;
+    top: 0px;
+    left: -100px;
+    animation: moveCloud 50s linear infinite;
+}
+@font-face{
+    font-family: handwriting;
+    src: url("handwriting.ttf") format("truetype");
+}
+
+body{
+    font-family:"handwriting";
+    font-size:xx-large;
+    font-weight: bold;
+    text-align: center;
+    z-index: 3;
+}
+
+/* LUNCH PAGE */
+.lunchLogo{
+
+background-color: transparent;
+background-attachment: fixed;
+border: none;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0%;
+position: relative;
+}
+
+@font-face{
+font-family: handwriting;
+src: url("handwriting.ttf") format("truetype");
+}
+
+body{
+font-family:"handwriting";
+font-size:xx-large;
+font-weight: bold;
+text-align: center;
+}
+
+.mouse:hover img{
+    content: url('mouseDead.png');
+}
+
+
+.chimken:hover img{
+    content: url('chimkenHaha.png');
+}
