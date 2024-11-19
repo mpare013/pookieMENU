@@ -104,7 +104,7 @@ font-weight: bold;
 text-align: center;
 }
 
-.mouse:hover img{
+.stick:hover img{
     content: url('stickFart.png');
 }
 
